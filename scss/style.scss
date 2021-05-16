@@ -41,6 +41,7 @@ a:active {
     opacity: 0.6;
 }
 
+
 /* ---header--- */
 
 .header {
@@ -52,7 +53,6 @@ a:active {
         justify-content: space-between;
         background-color: #fff;
     }
-
     &__button-link {
         width: 157px;
         height: 40px;
@@ -66,7 +66,6 @@ a:active {
         line-height: 14px;
         color: $white;
     }
-
     &__buttons {
         display: flex;
         align-items: center;
@@ -75,15 +74,14 @@ a:active {
         }
     }
 }
+
 .nav {
     &__list {
         display: flex;
     }
-
     &__item {
         margin-right: 52px;
     }
-
     &__item:last-child {
         margin-right: 0;
     }
@@ -96,6 +94,7 @@ a:active {
     color: $black-light;
 }
 
+
 /*---intro---*/
 
 .intro {
@@ -104,16 +103,13 @@ a:active {
     margin-bottom: 35px;
     width: 1440px;
     height: 755px;
-
     &__text {
         font-size: 15px;
         line-height: 21px;
     }
-
     &__text {
         margin-bottom: 19px;
     }
-
     &__title {
         margin-top: 0;
         margin-bottom: 0;
@@ -121,7 +117,6 @@ a:active {
         font-size: 54px;
         line-height: 61px;
     }
-
     &__subtitle {
         margin-bottom: 37px;
         font-weight: bold;
@@ -129,18 +124,15 @@ a:active {
         line-height: 54px;
         color: $purple;
     }
-
     &__description {
         margin-bottom: 4px;
         width: 438px;
         font-size: 18px;
         line-height: 30px;
     }
-
     &__form form {
         display: flex;
     }
-
     &__input {
         width: 268px;
         height: 45px;
@@ -151,11 +143,9 @@ a:active {
         padding-bottom: 11px;
         padding-left: 26px;
     }
-
     &__input::placeholder {
         opacity: 27%;
     }
-
     &__submit {
         width: 187px;
         height: 45px;
@@ -165,13 +155,13 @@ a:active {
         border: none;
         padding: 13px 45px 11px;
     }
-
     &__submit:hover,
     &__submit:focus,
     &__submit:active {
         opacity: 0.6;
     }
 }
+
 
 /*---customers---*/
 
@@ -184,7 +174,6 @@ a:active {
         color: $black-light;
         text-align: center;
     }
-
     &__wrapper {
         width: 1320px;
         height: 70px;
@@ -193,13 +182,11 @@ a:active {
         display: flex;
         justify-content: space-between;
     }
-
     &__link:hover,
     &__link:focus,
     &__link:active {
         opacity: 0.6;
     }
-
     &__item {
         width: 170px;
         height: 24px;
@@ -215,6 +202,7 @@ a:active {
     }
 }
 
+
 /*---ability---*/
 
 .ability {
@@ -225,12 +213,10 @@ a:active {
         padding: 8px 70px 0px;
         display: flex;
     }
-
     &__text {
         margin-right: 218px;
         padding-top: 177px;
     }
-
     &__title {
         margin-top: 0;
         margin-bottom: 58px;
@@ -239,12 +225,10 @@ a:active {
         line-height: 45px;
         color: $black-light;
     }
-
     &__buttons {
         margin-bottom: 56px;
         display: flex;
     }
-
     &__button {
         display: flex;
         justify-content: center;
@@ -255,13 +239,11 @@ a:active {
         border-radius: 20px;
         margin-right: 22px;
     }
-
     &__button-link {
         font-size: 15px;
         line-height: 15px;
         color: $white;
     }
-
     &__item {
         box-sizing: initial;
         padding: 7px 0;
@@ -274,37 +256,31 @@ a:active {
             color: $black;
         }
     }
-
     &__text-description {
         margin-bottom: 7px;
         font-size: 15px;
         line-height: 30px;
     }
-
     &__text-report {
         font-size: 15px;
         line-height: 15px;
         color: $black;
     }
-
     &__about {
         display: flex;
         flex-wrap: wrap;
-
         &-item {
             width: 310px;
             height: 220px;
             padding-left: 16px;
             border-left: 2px solid #e0e0e0;
         }
-
         &-title {
             margin-bottom: -8px;
             font-weight: bold;
             font-size: 40px;
             line-height: 45px;
         }
-
         &-description {
             font-size: 15px;
             line-height: 22px;
@@ -312,6 +288,7 @@ a:active {
         }
     }
 }
+
 
 /*---commerce---*/
 
@@ -323,30 +300,25 @@ a:active {
         line-height: 45px;
         text-align: center;
     }
-
     &__subtitle {
         margin-bottom: 46px;
         font-size: 18px;
         line-height: 30px;
         text-align: center;
     }
-
     &__items {
         margin: 0 auto 91px;
         padding: 0 160px;
         display: flex;
         justify-content: space-between;
     }
-
     &__item {
         width: 320px;
-
         &-img {
             display: flex;
             justify-content: center;
             margin-bottom: 43px;
         }
-
         &-title {
             margin-bottom: 16px;
             text-align: center;
@@ -354,7 +326,6 @@ a:active {
             font-size: 19px;
             line-height: 23px;
         }
-
         &-text {
             text-align: center;
             font-size: 15px;
@@ -363,12 +334,12 @@ a:active {
     }
 }
 
+
 /*---power---*/
 
 .power {
     padding-bottom: 115px;
     background-color: $grey-light;
-
     &__title {
         margin-bottom: 28px;
         padding-top: 94px;
@@ -406,6 +377,7 @@ a:active {
         color: $purple;
     }
 }
+
 
 /*---benefits---*/
 
@@ -451,6 +423,7 @@ a:active {
         }
     }
 }
+
 
 /*---brands---*/
 
@@ -502,6 +475,7 @@ a:active {
         }
     }
 }
+
 
 /*---specialize---*/
 
@@ -614,6 +588,7 @@ a:active {
     }
 }
 
+
 /*---ecosystem---*/
 
 .ecosystem {
@@ -635,7 +610,7 @@ a:active {
             font-size: 13px;
             line-height: 30px;
         }
-        &-description + &-description {
+        &-description+&-description {
             margin-bottom: 85px;
         }
         &-link {
@@ -653,11 +628,13 @@ a:active {
     }
 }
 
+
 /*---demo---*/
 
 .demo {
     padding: 93px 0 107px;
-    background: url(/media/demo-bg.jpg) no-repeat;
+    background-image: url(/media/demo-bg.jpg);
+    background-repeat: no-repeat;
     &__title {
         margin: 0 0 39px;
         font-weight: bold;
@@ -667,12 +644,13 @@ a:active {
         color: $white;
     }
     &__form {
+        display: flex;
+        justify-content: center;
         text-align: center;
     }
     &__form form {
         display: flex;
     }
-
     &__input {
         width: 268px;
         height: 45px;
@@ -683,11 +661,9 @@ a:active {
         padding-bottom: 11px;
         padding-left: 26px;
     }
-
     &__input::placeholder {
         opacity: 27%;
     }
-
     &__submit {
         width: 187px;
         height: 45px;
@@ -697,10 +673,37 @@ a:active {
         border: none;
         padding: 13px 45px 11px;
     }
-
     &__submit:hover,
     &__submit:focus,
     &__submit:active {
         opacity: 0.6;
+    }
+}
+
+.adoption {
+    padding-bottom: 40px;
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 29px;
+    }
+    &__description {
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 45px;
+        text-align: center;
+        color: $black-light;
+    }
+    &__items {
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        &-link {
+            margin-right: 30px;
+        }
+        &-link:last-child {
+            margin-right: 0;
+        }
     }
 }
