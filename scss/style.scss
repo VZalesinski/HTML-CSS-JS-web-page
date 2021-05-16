@@ -41,7 +41,6 @@ a:active {
     opacity: 0.6;
 }
 
-
 /* ---header--- */
 
 .header {
@@ -93,7 +92,6 @@ a:active {
     line-height: 14px;
     color: $black-light;
 }
-
 
 /*---intro---*/
 
@@ -162,7 +160,6 @@ a:active {
     }
 }
 
-
 /*---customers---*/
 
 .customers {
@@ -201,7 +198,6 @@ a:active {
         }
     }
 }
-
 
 /*---ability---*/
 
@@ -289,7 +285,6 @@ a:active {
     }
 }
 
-
 /*---commerce---*/
 
 .commerce {
@@ -334,7 +329,6 @@ a:active {
     }
 }
 
-
 /*---power---*/
 
 .power {
@@ -377,7 +371,6 @@ a:active {
         color: $purple;
     }
 }
-
 
 /*---benefits---*/
 
@@ -423,7 +416,6 @@ a:active {
         }
     }
 }
-
 
 /*---brands---*/
 
@@ -475,7 +467,6 @@ a:active {
         }
     }
 }
-
 
 /*---specialize---*/
 
@@ -588,7 +579,6 @@ a:active {
     }
 }
 
-
 /*---ecosystem---*/
 
 .ecosystem {
@@ -610,7 +600,7 @@ a:active {
             font-size: 13px;
             line-height: 30px;
         }
-        &-description+&-description {
+        &-description + &-description {
             margin-bottom: 85px;
         }
         &-link {
@@ -627,7 +617,6 @@ a:active {
         }
     }
 }
-
 
 /*---demo---*/
 
@@ -680,6 +669,8 @@ a:active {
     }
 }
 
+/*---adoption---*/
+
 .adoption {
     padding-bottom: 40px;
     &__img {
@@ -704,6 +695,73 @@ a:active {
         }
         &-link:last-child {
             margin-right: 0;
+        }
+    }
+}
+
+/*---footer---*/
+
+.footer {
+    position: relative;
+    padding: 57px 0 82px;
+    background-color: #20003c;
+    color: $white;
+    &__text {
+        padding-left: 158px;
+        display: flex;
+        margin-bottom: 45px;
+        h3 {
+            margin: 0 0 30px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 21px;
+        }
+        p {
+            margin-bottom: 11px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+    &__capabilities {
+        &-block {
+            display: flex;
+        }
+        &-container {
+            max-width: 159px;
+            margin-right: 33px;
+        }
+        &-container:last-child {
+            margin-right: 28px;
+        }
+    }
+    &__products {
+        width: 182px;
+        margin-right: 10px;
+    }
+    &__resources {
+        margin-right: 110px;
+    }
+    &__company {
+        margin-right: 114px;
+    }
+    &__copyright {
+        padding: 0 110px;
+        &-img {
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: center;
+        }
+        &-text {
+            display: flex;
+            justify-content: center;
+        }
+        &-svg {
+            position: absolute;
+            left: 110px;
+        }
+        &-description {
+            display: flex;
+            justify-content: center;
         }
     }
 }
