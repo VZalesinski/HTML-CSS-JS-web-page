@@ -753,7 +753,7 @@ a:active {
 /*---demo---*/
 .demo {
   padding: 93px 0 107px;
-  background-image: url(/media/demo-bg.jpg);
+  background-image: url(../media/demo-bg.jpg);
   background-repeat: no-repeat;
 }
 
