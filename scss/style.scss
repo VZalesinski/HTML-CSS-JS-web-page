@@ -623,7 +623,7 @@ a:active {
 .demo {
     padding: 93px 0 107px;
     &__bg {
-        background-image: url(../media/demo-bg.jpg);
+        background-image: url(../media/demo-backgroundjpg.jpg);
         background-repeat: no-repeat;
     }
     &__title {
@@ -675,6 +675,7 @@ a:active {
 
 .adoption {
     padding-bottom: 40px;
+    background-color: $grey-light;
     &__img {
         display: flex;
         justify-content: center;
