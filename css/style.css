@@ -964,4 +964,6 @@ a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 13px;
+  line-height: 30px;
 }
