@@ -25,17 +25,6 @@ body {
     color: $black;
 }
 
-.wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.container-bg {
-    background: url(../media/intro-bg.jpg) no-repeat center;
-    background-size: cover;
-    background-position: right bottom;
-}
-
 a:hover,
 a:focus,
 a:active {
@@ -46,6 +35,8 @@ a:active {
 
 .header {
     &__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
         max-height: 60px;
         padding: 10px 30px;
         display: flex;
@@ -63,7 +54,7 @@ a:active {
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        line-height: 14px;
+        line-height: 100%;
         color: $white;
     }
     &__buttons {
@@ -90,46 +81,52 @@ a:active {
 .header__link,
 .nav__link {
     font-size: 14px;
-    line-height: 14px;
+    line-height: 100%;
     color: $black-light;
 }
 
 /*---intro---*/
 
 .intro {
-    padding-top: 150px;
-    padding-left: 115px;
-    margin-bottom: 35px;
-    // width: 1440px;
-    height: 755px;
-    &__text {
-        font-size: 15px;
-        line-height: 21px;
+    background-color: #f6bed9;
+    &__bg {
+        max-width: 1440px;
+        margin: 0 auto;
+        &-image {
+            background: url(../media/intro-bg.jpg) no-repeat;
+            // background-size: ;
+            background-position: right bottom;
+        }
+    }
+    &__wrapper {
+        padding: 150px 0 200px 115px;
     }
     &__text {
         margin-bottom: 19px;
+        font-size: 15px;
+        line-height: 140%;
     }
     &__title {
         margin-top: 0;
         margin-bottom: 0;
         font-weight: bold;
         font-size: 54px;
-        line-height: 61px;
+        line-height: 113%;
     }
     &__subtitle {
         margin-bottom: 37px;
         font-weight: bold;
         font-size: 54px;
-        line-height: 54px;
+        line-height: 100%;
         color: $purple;
     }
     &__description {
         margin-bottom: 4px;
         width: 438px;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 167%;
     }
-    &__form form {
+    form {
         display: flex;
     }
     &__input {
@@ -152,7 +149,6 @@ a:active {
         background: $purple;
         border-radius: 0px 27.5px 27.5px 0px;
         border: none;
-        padding: 13px 45px 11px;
     }
     &__submit:hover,
     &__submit:focus,
@@ -164,39 +160,33 @@ a:active {
 /*---customers---*/
 
 .customers {
+    padding: 35px 0 100px;
+    text-align: center;
     &__text {
-        margin: 0 auto 15px;
+        margin: 0 auto 29px;
         font-weight: bold;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 167%;
         color: $black-light;
-        text-align: center;
     }
     &__wrapper {
         max-width: 1320px;
         height: 70px;
-        margin: 0 auto 10px;
-        padding: 14px 55px;
+        margin: 0 auto 24px;
+        padding: 0 55px;
         display: flex;
         justify-content: space-between;
     }
-    &__link:hover,
-    &__link:focus,
-    &__link:active {
-        opacity: 0.6;
+    &__brand img {
+        max-height: 42px;
     }
-    &__item {
-        width: 170px;
-        height: 24px;
-        margin: 0 auto 100px;
-        text-align: center;
+    &__link {
+        padding: 0 7px 2px;
         border-bottom: 2px solid $purple;
-        .customers__link {
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 24px;
-            color: $black-light;
-        }
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        color: $black-light;
     }
 }
 
@@ -204,14 +194,13 @@ a:active {
 
 .ability {
     &__wrapper {
-        margin-bottom: 94px;
         max-width: 1380px;
-        margin: 0 auto 94px;
-        padding: 8px 70px 0px;
+        margin: 0 auto;
+        padding: 8px 70px 94px;
         display: flex;
     }
     &__text {
-        margin-right: 218px;
+        width: 50%;
         padding-top: 177px;
     }
     &__title {
@@ -219,7 +208,7 @@ a:active {
         margin-bottom: 58px;
         width: 401px;
         font-size: 40px;
-        line-height: 45px;
+        line-height: 112%;
         color: $black-light;
     }
     &__buttons {
@@ -237,50 +226,56 @@ a:active {
         margin-right: 22px;
     }
     &__button-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 187px;
+        height: 40px;
+        background-color: $purple;
+        border-radius: 20px;
+        margin-right: 22px;
         font-size: 15px;
-        line-height: 15px;
+        line-height: 100%;
         color: $white;
     }
-    &__item {
-        box-sizing: initial;
-        padding: 7px 0;
-        height: 21px;
+    &__link {
+        padding: 14px 0;
+        height: 38px;
         border-bottom: 2px solid $purple;
-        .ability__link {
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 14px;
-            color: $black;
-        }
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 14px;
+        color: $black;
     }
     &__text-description {
         margin-bottom: 7px;
         font-size: 15px;
-        line-height: 30px;
+        line-height: 200%;
     }
     &__text-report {
         font-size: 15px;
-        line-height: 15px;
+        line-height: 100%;
         color: $black;
     }
     &__about {
+        width: 50%;
         display: flex;
         flex-wrap: wrap;
         &-item {
-            width: 310px;
+            width: 50%;
             height: 220px;
-            padding-left: 16px;
+            padding: 8px 0 108px 16px;
             border-left: 2px solid #e0e0e0;
         }
         &-title {
             margin-bottom: -8px;
             font-weight: bold;
             font-size: 40px;
-            line-height: 45px;
+            line-height: 112%;
         }
         &-description {
             font-size: 15px;
-            line-height: 22px;
+            line-height: 147%;
             white-space: pre-line;
         }
     }
@@ -289,28 +284,32 @@ a:active {
 /*---commerce---*/
 
 .commerce {
+    max-width: 1440px;
+    margin: 0 auto;
     &__title {
-        margin-bottom: 22px;
+        margin: 0 0 22px;
         font-weight: bold;
         font-size: 40px;
-        line-height: 45px;
+        line-height: 112%;
         text-align: center;
     }
     &__subtitle {
         margin-bottom: 46px;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 167%;
         text-align: center;
     }
     &__items {
-        margin: 0 auto 91px;
-        padding: 0 160px;
+        padding: 0 160px 91px;
         display: flex;
         justify-content: space-between;
     }
     &__item {
-        width: 320px;
+        width: 30%;
         &-img {
+            img {
+                max-height: 50px;
+            }
             display: flex;
             justify-content: center;
             margin-bottom: 43px;
@@ -320,12 +319,13 @@ a:active {
             text-align: center;
             font-weight: bold;
             font-size: 19px;
-            line-height: 23px;
+            line-height: 121%;
         }
         &-text {
+            max-width: 316px;
             text-align: center;
             font-size: 15px;
-            line-height: 15px;
+            line-height: 147%;
         }
     }
 }
@@ -333,40 +333,44 @@ a:active {
 /*---power---*/
 
 .power {
-    padding-bottom: 115px;
+    padding: 94px 0 115px;
     background-color: $grey-light;
     &__title {
-        margin-bottom: 28px;
-        padding-top: 94px;
+        margin: 0 0 28px;
         font-weight: bold;
         font-size: 40px;
-        line-height: 45px;
+        line-height: 112%;
         text-align: center;
     }
     &__description {
         margin-bottom: 90px;
         font-size: 15px;
-        line-height: 30px;
+        line-height: 200%;
         text-align: center;
     }
     &__img {
+        max-height: 560px;
         display: block;
-        margin: 0 auto 87px;
+        margin: 0 auto 76px;
     }
     &__buttons {
+        padding: 11px 0 14px 0;
         text-align: center;
     }
     &__button {
-        padding: 11px 45px 14px;
+        width: 189px;
+        margin-right: 11px;
+        padding: 11px 51px 11px;
         font-size: 15px;
-        line-height: 15px;
+        line-height: 100%;
         background: $purple;
         border-radius: 30px;
         color: $white;
     }
     &__button:last-child {
-        margin-left: 22px;
-        background: #ffffff;
+        margin-right: 0;
+        margin-left: 11px;
+        background: $white;
         box-shadow: 0px 0px 0px #6f2cff;
         border-radius: 30px;
         color: $purple;
@@ -378,42 +382,44 @@ a:active {
 .benefits {
     padding: 94px 0 150px;
     &__title {
-        margin-bottom: 28px;
+        margin: 0 0 62px;
         font-weight: bold;
         font-size: 40px;
-        line-height: 45px;
+        line-height: 112%;
         text-align: center;
     }
     &__items {
         max-width: 1020px;
         margin: 0 auto;
-        padding-top: 34px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     &__item {
-        width: 276px;
+        width: 27%;
+        padding-bottom: 87px;
         &-img {
+            img {
+                max-height: 50px;
+            }
             margin-bottom: 4px;
             display: flex;
             justify-content: center;
         }
         &-title {
-            margin-bottom: -10px;
+            margin-bottom: 11px;
             font-weight: bold;
             font-size: 19px;
-            line-height: 45px;
+            line-height: 237%;
             text-align: center;
         }
         &-text {
-            margin-bottom: 77px;
+            max-width: 276px;
             font-size: 15px;
-            line-height: 22px;
+            line-height: 147%;
             text-align: center;
             color: $black-light;
             text-align: center;
-            white-space: pre-line;
         }
     }
 }
@@ -427,10 +433,12 @@ a:active {
         margin: 0 0 70px;
         font-weight: bold;
         font-size: 40px;
-        line-height: 45px;
+        line-height: 112%;
         text-align: center;
     }
     &-slider {
+        box-sizing: content-box;
+        padding: 0px 7px 0 50px;
         margin: 0 auto;
         max-width: 1050px;
         &__slide {
@@ -440,6 +448,8 @@ a:active {
             box-shadow: 0px 2px 4px rgba(192, 192, 192, 0.5);
             border-radius: 7px 7px 7px 7px;
             &-img {
+                max-width: 320px;
+                max-height: 205px;
                 margin-bottom: 25px;
             }
             &-title {
@@ -451,17 +461,23 @@ a:active {
                 color: $purple;
                 font-weight: bold;
                 font-size: 18px;
-                line-height: 22px;
+                line-height: 122%;
                 text-align: center;
                 white-space: pre-line;
             }
         }
         .swiper-button-prev::after {
+            position: absolute;
+            bottom: 28px;
+            right: 69px;
             color: $purple;
             font-weight: 600;
             border-radius: 3px;
         }
         .swiper-button-next::after {
+            bottom: 28px;
+            left: 71px;
+            position: absolute;
             color: $purple;
             font-weight: 600;
             border-radius: 3px;
@@ -477,16 +493,19 @@ a:active {
         margin: 0 0 12px;
         font-weight: bold;
         font-size: 40px;
-        line-height: 45px;
+        line-height: 112%;
         text-align: center;
     }
     &__description {
         margin-bottom: 65px;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 167%;
         text-align: center;
     }
     &-container {
+        img {
+            max-height: 50px;
+        }
         display: flex;
         justify-content: center;
     }
@@ -513,20 +532,20 @@ a:active {
             margin: 0;
             font-weight: bold;
             font-size: 18px;
-            line-height: 25px;
+            line-height: 139%;
             color: $white;
         }
         &-description {
             margin-bottom: 8px;
             font-size: 15px;
-            line-height: 22px;
+            line-height: 147%;
             color: $white;
             white-space: pre-line;
         }
         &-link {
             display: inline-block;
             font-size: 15px;
-            line-height: 15px;
+            line-height: 100%;
             color: $white;
         }
     }
@@ -583,9 +602,13 @@ a:active {
 /*---ecosystem---*/
 
 .ecosystem {
-    display: flex;
-    padding: 40px 90px 20px 110px;
     background-color: $grey-light;
+    &__wrapper {
+        display: flex;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 40px 90px 20px 110px;
+    }
     &__text {
         max-width: 590px;
         margin-right: 83px;
@@ -594,13 +617,13 @@ a:active {
             margin: 0 0 47px;
             font-weight: bold;
             font-size: 40px;
-            line-height: 45px;
+            line-height: 112%;
             color: #17002e;
         }
         &-description {
             margin-bottom: 11px;
             font-size: 13px;
-            line-height: 30px;
+            line-height: 231%;
         }
         &-description + &-description {
             margin-bottom: 85px;
@@ -612,11 +635,14 @@ a:active {
             justify-content: center;
             align-items: center;
             font-size: 14px;
-            line-height: 14px;
+            line-height: 100%;
             color: $white;
             background: #6f2cff;
             border-radius: 30px;
         }
+    }
+    img {
+        max-height: 567px;
     }
 }
 
@@ -625,14 +651,13 @@ a:active {
 .demo {
     padding: 93px 0 107px;
     &__bg {
-        background-image: url(../media/demo-backgroundjpg.jpg);
-        background-repeat: no-repeat;
+        background: url(../media/demo-backgroundjpg.jpg) center repeat-x;
     }
     &__title {
         margin: 0 0 39px;
         font-weight: bold;
         font-size: 40px;
-        line-height: 45px;
+        line-height: 112%;
         text-align: center;
         color: $white;
     }
@@ -676,27 +701,32 @@ a:active {
 /*---adoption---*/
 
 .adoption {
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     background-color: $grey-light;
     &__img {
         display: flex;
         justify-content: center;
         margin-bottom: 29px;
+        img {
+            max-height: 182px;
+        }
     }
     &__description {
         margin-bottom: 15px;
         font-size: 16px;
-        line-height: 45px;
+        line-height: 281%;
         text-align: center;
         color: $black-light;
     }
     &__items {
-        padding-bottom: 5px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         &-link {
             margin-right: 30px;
+            img {
+                max-height: 23px;
+            }
         }
         &-link:last-child {
             margin-right: 0;
@@ -712,19 +742,19 @@ a:active {
     background-color: #20003c;
     color: $white;
     &__text {
-        padding-left: 158px;
         display: flex;
+        justify-content: center;
         margin-bottom: 45px;
         h3 {
             margin: 0 0 30px;
             font-weight: bold;
             font-size: 16px;
-            line-height: 21px;
+            line-height: 130%;
         }
         p {
             margin-bottom: 11px;
             font-size: 14px;
-            line-height: 18px;
+            line-height: 130%;
         }
     }
     &__capabilities {
@@ -757,18 +787,22 @@ a:active {
             justify-content: center;
         }
         &-text {
+            position: relative;
             display: flex;
             justify-content: center;
         }
         &-svg {
             position: absolute;
             left: 110px;
+            img {
+                max-height: 18px;
+            }
         }
         &-description {
             display: flex;
             justify-content: center;
             font-size: 13px;
-            line-height: 30px;
+            line-height: 231%;
         }
     }
 }
@@ -780,18 +814,9 @@ a:active {
     .header__button-link {
         width: 145px;
     }
-    .ability__text {
-        margin-right: 134px;
-    }
-    .ability__about-item {
-        width: 260px;
-    }
 }
 
 @media screen and (max-width: 1200px) {
-    .container-bg {
-        opacity: 0.95;
-    }
     .nav {
         &__list {
             padding: 0;
@@ -810,7 +835,6 @@ a:active {
         }
     }
     .intro {
-        padding-left: 65px;
         &__description,
         &__text {
             text-shadow: 0 0 black;
@@ -819,19 +843,8 @@ a:active {
     .customers__wrapper {
         padding: 14px 30px;
     }
-    .ability {
-        &__wrapper {
-            padding-right: 0;
-        }
-        &__text {
-            margin-right: 31px;
-        }
-        &__about-item {
-            width: 233px;
-        }
-    }
     .commerce__items {
-        padding: 0 23px;
+        padding: 0 23px 91px;
     }
     .power__img {
         width: 840px;
@@ -867,4 +880,16 @@ a:active {
             left: 50px;
         }
     }
+}
+
+@media screen and (max-width: 992px) {
+    .nav {
+        display: none;
+    }
+    .commerce__item {
+        width: 250px;
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 768px) {
 }

@@ -1,3 +1,5 @@
+// slider swiper
+
 const swiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
@@ -8,3 +10,6 @@ const swiper = new Swiper('.swiper-container', {
   loop: true,
   loopedSlides: 3,
 });
+
+// burger-menu
+
