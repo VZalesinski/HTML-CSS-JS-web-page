@@ -31,6 +31,7 @@ a:active {
     opacity: 0.6;
 }
 
+
 /* ---header--- */
 
 .header {
@@ -84,6 +85,7 @@ a:active {
     line-height: 100%;
     color: $black-light;
 }
+
 
 /*---intro---*/
 
@@ -157,6 +159,7 @@ a:active {
     }
 }
 
+
 /*---customers---*/
 
 .customers {
@@ -189,6 +192,7 @@ a:active {
         color: $black-light;
     }
 }
+
 
 /*---ability---*/
 
@@ -281,6 +285,7 @@ a:active {
     }
 }
 
+
 /*---commerce---*/
 
 .commerce {
@@ -330,6 +335,7 @@ a:active {
     }
 }
 
+
 /*---power---*/
 
 .power {
@@ -376,6 +382,7 @@ a:active {
         color: $purple;
     }
 }
+
 
 /*---benefits---*/
 
@@ -424,6 +431,7 @@ a:active {
     }
 }
 
+
 /*---brands---*/
 
 .brands {
@@ -438,7 +446,7 @@ a:active {
     }
     &-slider {
         box-sizing: content-box;
-        padding: 0px 7px 0 50px;
+        padding: 0px 12px 0 45px;
         margin: 0 auto;
         max-width: 1050px;
         &__slide {
@@ -469,7 +477,7 @@ a:active {
         .swiper-button-prev::after {
             position: absolute;
             bottom: 28px;
-            right: 69px;
+            right: 67px;
             color: $purple;
             font-weight: 600;
             border-radius: 3px;
@@ -484,6 +492,7 @@ a:active {
         }
     }
 }
+
 
 /*---specialize---*/
 
@@ -599,6 +608,7 @@ a:active {
     }
 }
 
+
 /*---ecosystem---*/
 
 .ecosystem {
@@ -625,7 +635,7 @@ a:active {
             font-size: 13px;
             line-height: 231%;
         }
-        &-description + &-description {
+        &-description+&-description {
             margin-bottom: 85px;
         }
         &-link {
@@ -645,6 +655,7 @@ a:active {
         max-height: 567px;
     }
 }
+
 
 /*---demo---*/
 
@@ -698,6 +709,7 @@ a:active {
     }
 }
 
+
 /*---adoption---*/
 
 .adoption {
@@ -733,6 +745,7 @@ a:active {
         }
     }
 }
+
 
 /*---footer---*/
 
@@ -891,5 +904,5 @@ a:active {
         padding: 0 30px;
     }
 }
-@media screen and (max-width: 768px) {
-}
+
+@media screen and (max-width: 768px) {}
