@@ -45,6 +45,9 @@ a:active {
         justify-content: space-between;
         background-color: #fff;
     }
+    &__logo-pic {
+        max-width: 79px;
+    }
     &__button-link {
         width: 157px;
         height: 40px;
@@ -764,10 +767,12 @@ a:active {
             font-size: 16px;
             line-height: 130%;
         }
-        p {
+        a {
+            display: block;
             margin-bottom: 11px;
             font-size: 14px;
             line-height: 130%;
+            color: $white;
         }
     }
     &__capabilities {
@@ -868,8 +873,12 @@ a:active {
     .brands {
         &-slider {
             max-width: 977px;
-            &__slide-img {
-                max-width: 299px;
+            padding-left: 15px;
+            &__slide {
+                // max-width: 287px;
+                &-img {
+                    max-width: 299px;
+                }
             }
         }
     }
