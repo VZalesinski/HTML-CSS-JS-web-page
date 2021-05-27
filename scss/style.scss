@@ -31,7 +31,6 @@ a:active {
     opacity: 0.6;
 }
 
-
 /* ---header--- */
 
 .header {
@@ -44,6 +43,9 @@ a:active {
         align-items: center;
         justify-content: space-between;
         background-color: #fff;
+    }
+    &__menu {
+        display: none;
     }
     &__logo-pic {
         max-width: 79px;
@@ -88,7 +90,6 @@ a:active {
     line-height: 100%;
     color: $black-light;
 }
-
 
 /*---intro---*/
 
@@ -162,7 +163,6 @@ a:active {
     }
 }
 
-
 /*---customers---*/
 
 .customers {
@@ -195,7 +195,6 @@ a:active {
         color: $black-light;
     }
 }
-
 
 /*---ability---*/
 
@@ -288,7 +287,6 @@ a:active {
     }
 }
 
-
 /*---commerce---*/
 
 .commerce {
@@ -338,7 +336,6 @@ a:active {
     }
 }
 
-
 /*---power---*/
 
 .power {
@@ -385,7 +382,6 @@ a:active {
         color: $purple;
     }
 }
-
 
 /*---benefits---*/
 
@@ -434,7 +430,6 @@ a:active {
     }
 }
 
-
 /*---brands---*/
 
 .brands {
@@ -449,7 +444,7 @@ a:active {
     }
     &-slider {
         box-sizing: content-box;
-        padding: 0px 12px 0 45px;
+        padding: 0px 5px 0 47px;
         margin: 0 auto;
         max-width: 1050px;
         &__slide {
@@ -477,25 +472,27 @@ a:active {
                 white-space: pre-line;
             }
         }
-        .swiper-button-prev::after {
-            position: absolute;
-            bottom: 28px;
-            right: 67px;
-            color: $purple;
-            font-weight: 600;
-            border-radius: 3px;
-        }
-        .swiper-button-next::after {
-            bottom: 28px;
-            left: 71px;
-            position: absolute;
-            color: $purple;
-            font-weight: 600;
-            border-radius: 3px;
-        }
     }
 }
 
+.swiper-button-prev {
+    left: 14%;
+    color: $purple;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.swiper-button-next {
+    right: 16%;
+    color: $purple;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.slider {
+    &-container {
+        position: relative;
+    }
+}
 
 /*---specialize---*/
 
@@ -611,7 +608,6 @@ a:active {
     }
 }
 
-
 /*---ecosystem---*/
 
 .ecosystem {
@@ -623,7 +619,7 @@ a:active {
         padding: 40px 90px 20px 110px;
     }
     &__text {
-        max-width: 590px;
+        max-width: 50%;
         margin-right: 83px;
         padding-top: 129px;
         &-title {
@@ -638,7 +634,7 @@ a:active {
             font-size: 13px;
             line-height: 231%;
         }
-        &-description+&-description {
+        &-description + &-description {
             margin-bottom: 85px;
         }
         &-link {
@@ -654,11 +650,13 @@ a:active {
             border-radius: 30px;
         }
     }
+    &__img {
+        max-width: 50%;
+    }
     img {
         max-height: 567px;
     }
 }
-
 
 /*---demo---*/
 
@@ -712,7 +710,6 @@ a:active {
     }
 }
 
-
 /*---adoption---*/
 
 .adoption {
@@ -748,7 +745,6 @@ a:active {
         }
     }
 }
-
 
 /*---footer---*/
 
@@ -825,12 +821,32 @@ a:active {
     }
 }
 
+@media screen and (max-width: 1664px) {
+    .swiper-button-prev {
+        left: 7%;
+    }
+    .swiper-button-next {
+        right: 9%;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     .nav__item {
         margin-right: 47px;
     }
     .header__button-link {
         width: 145px;
+    }
+    .swiper-button-prev {
+        left: 1%;
+    }
+    .swiper-button-next {
+        right: 3%;
+    }
+    .ecosystem {
+        &__text {
+            margin-right: 0;
+        }
     }
 }
 
@@ -853,13 +869,16 @@ a:active {
         }
     }
     .intro {
+        &__bg {
+            opacity: 0.9;
+        }
         &__description,
         &__text {
             text-shadow: 0 0 black;
         }
     }
     .customers__wrapper {
-        padding: 14px 30px;
+        padding: 0 30px;
     }
     .commerce__items {
         padding: 0 23px 91px;
@@ -872,26 +891,55 @@ a:active {
     }
     .brands {
         &-slider {
-            max-width: 977px;
-            padding-left: 15px;
+            box-sizing: border-box;
+            max-width: 942px;
+            margin-bottom: 20px;
+            padding: 0 27px 0 15px;
             &__slide {
-                // max-width: 287px;
+                max-width: 275px;
                 &-img {
-                    max-width: 299px;
+                    max-width: 274px;
                 }
             }
         }
     }
+    .swiper-button-prev {
+        left: 0;
+        margin: 0 10px 0 0;
+    }
+    .swiper-button-next {
+        right: 0;
+        margin: 0 0 0 10px;
+        padding-left: 35px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: relative;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+    }
+    .slider-buttons {
+        display: flex;
+        justify-content: center;
+    }
     .ecosystem {
-        padding: 40px 0 20px 40px;
+        &__wrapper {
+            padding-top: 50px;
+        }
+        &__text {
+            padding-top: 60px;
+            &-title {
+                font-size: 35px;
+            }
+        }
         &__image {
             max-width: 450px;
+            // height: 400px;
         }
     }
     .footer {
-        &__text {
-            padding-left: 50px;
-        }
         &__resources {
             margin-right: 50px;
         }
@@ -899,7 +947,7 @@ a:active {
             margin-right: 50px;
         }
         &__copyright-svg {
-            left: 50px;
+            left: 20px;
         }
     }
 }
@@ -909,9 +957,9 @@ a:active {
         display: none;
     }
     .commerce__item {
-        width: 250px;
         padding: 0 30px;
     }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+}
