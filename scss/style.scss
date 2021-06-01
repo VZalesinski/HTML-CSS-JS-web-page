@@ -100,7 +100,6 @@ a:active {
         margin: 0 auto;
         &-image {
             background: url(../media/intro-bg.jpg) no-repeat;
-            // background-size: ;
             background-position: right bottom;
         }
     }
@@ -413,7 +412,7 @@ a:active {
             justify-content: center;
         }
         &-title {
-            margin-bottom: 11px;
+            margin: 0 0 11px;
             font-weight: bold;
             font-size: 19px;
             line-height: 237%;
@@ -545,11 +544,11 @@ a:active {
             color: $white;
         }
         &-description {
+            max-width: 377px;
             margin-bottom: 8px;
             font-size: 15px;
             line-height: 147%;
             color: $white;
-            white-space: pre-line;
         }
         &-link {
             display: inline-block;
@@ -869,9 +868,6 @@ a:active {
         }
     }
     .intro {
-        &__bg {
-            opacity: 0.9;
-        }
         &__description,
         &__text {
             text-shadow: 0 0 black;
@@ -915,7 +911,7 @@ a:active {
     .swiper-button-next,
     .swiper-button-prev {
         position: relative;
-        background-color: #fff;
+        background-color: $white;
         border-radius: 50%;
         width: 60px;
         height: 60px;
@@ -953,13 +949,219 @@ a:active {
 }
 
 @media screen and (max-width: 992px) {
+    .header {
+        &__wrapper {
+            padding: 10px;
+        }
+        &__logo {
+            &-pic {
+                max-width: 67px;
+            }
+            &-link {
+                display: flex;
+            }
+        }
+        &__button-link {
+            width: 100px;
+            height: 35px;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+    }
     .nav {
-        display: none;
+        &__item {
+            margin-right: 15px;
+            font-size: 13px;
+        }
+        &__link {
+            font-size: 13px;
+        }
+    }
+    .intro {
+        &__wrapper {
+            padding-left: 50px;
+            padding-bottom: 300px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__title {
+            font-size: 47px;
+        }
+        &__subtitle {
+            font-size: 47px;
+        }
+        &__description {
+            font-size: 16px;
+        }
+    }
+    .customers {
+        &__brand img {
+            max-width: 73px;
+            max-height: 32px;
+        }
+        &__wrapper {
+            max-height: 50px;
+        }
+    }
+    .ability {
+        &__wrapper {
+            padding: 8px 55px 94px;
+        }
+        &__text {
+            width: 55%;
+        }
+        &__title {
+            width: 100%;
+            font-size: 33px;
+        }
+        &__button-link {
+            width: 162px;
+            height: 38px;
+            margin-right: 18px;
+        }
+        &__about {
+            width: 45%;
+            &-title {
+                font-size: 35px;
+            }
+            &-description {
+                font-size: 14px;
+            }
+        }
     }
     .commerce__item {
         padding: 0 30px;
     }
+    .power {
+        &__description {
+            font-size: 14px;
+        }
+        &__img {
+            max-width: 740px;
+        }
+    }
+    .benefits {
+        &__item {
+            width: 30%;
+            &-title {
+                font-size: 16px;
+            }
+            &_text {
+                font-size: 14px;
+            }
+        }
+    }
+    .brands {
+        &-slider {
+            max-width: 727px;
+            &__slide {
+                width: 201px;
+                height: 410px;
+                &-img {
+                    max-width: 201px;
+                }
+                &-title {
+                    img {
+                        max-height: 30px;
+                    }
+                }
+                &-description {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .grid {
+        grid-template-columns: repeat(2, 348px);
+        &__block {
+            padding: 30px 10px 0 20px;
+            &-description {
+                font-size: 14px;
+            }
+            &-link {
+                font-size: 14px;
+            }
+        }
+        &__block:nth-child(1) {
+            .grid__block-link {
+                width: 316px;
+            }
+        }
+        &__block:nth-child(3) {
+            .grid__block-description {
+                margin-bottom: 8px;
+            }
+        }
+        &__block:nth-child(5) {
+            .grid__block-link {
+                width: 303px;
+            }
+        }
+    }
+    .ecosystem {
+        &__wrapper {
+            padding: 40px 0 20px 50px;
+        }
+        &__text {
+            &-title {
+                font-size: 32px;
+            }
+            &-description + &-description {
+                margin-bottom: 30px;
+            }
+        }
+        &__image {
+            max-width: 343px;
+        }
+    }
+    .footer {
+        padding: 57px 20px 82px;
+        &__text {
+            h3 {
+                font-size: 14px;
+            }
+            a {
+                font-size: 12px;
+            }
+        }
+        &__capabilities {
+            &-container {
+                margin-right: 17px;
+            }
+            &-container:last-child {
+                margin-right: 17px;
+            }
+        }
+        &__resources,
+        &__company {
+            margin-right: 30px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        &__menu {
+            z-index: 5;
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 18px;
+            cursor: pointer;
+        }
+        &__menu::before,
+        &__menu::after,
+        &__menu span {
+            left: 0;
+            position: absolute;
+            height: 10%;
+            width: 100%;
+            transition: all 0, 3s ease 0s;
+            background-color: $white;
+        }
+    }
+    .nav {
+        display: none;
+    }
 }
