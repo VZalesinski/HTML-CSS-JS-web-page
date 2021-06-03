@@ -38,19 +38,6 @@
     return _extends.apply(this, arguments);
   }
 
-  /**
-   * SSR Window 3.0.0
-   * Better handling for window object in SSR environment
-   * https://github.com/nolimits4web/ssr-window
-   *
-   * Copyright 2020, Vladimir Kharlampidi
-   *
-   * Licensed under MIT
-   *
-   * Released on: November 9, 2020
-   */
-
-  /* eslint-disable no-param-reassign */
   function isObject$1(obj) {
     return obj !== null && typeof obj === 'object' && 'constructor' in obj && obj.constructor === Object;
   }

@@ -130,7 +130,7 @@ a:active {
     }
     &__description {
         margin-bottom: 4px;
-        width: 438px;
+        max-width: 438px;
         font-size: 18px;
         line-height: 167%;
     }
@@ -366,9 +366,9 @@ a:active {
         text-align: center;
     }
     &__button {
-        width: 189px;
+        max-width: 189px;
         margin-right: 11px;
-        padding: 11px 51px 11px;
+        padding: 11px 51px;
         font-size: 15px;
         line-height: 100%;
         background: $purple;
@@ -684,7 +684,7 @@ a:active {
         display: flex;
     }
     &__input {
-        width: 268px;
+        max-width: 268px;
         height: 45px;
         border: 1px solid $purple;
         box-sizing: border-box;
@@ -697,7 +697,7 @@ a:active {
         opacity: 27%;
     }
     &__submit {
-        width: 187px;
+        max-width: 187px;
         height: 45px;
         color: $white;
         background: $purple;
@@ -1267,6 +1267,7 @@ a:active {
             }
         }
         &__title {
+            padding: 0 15px;
             text-align: center;
         }
         &__buttons {
@@ -1274,6 +1275,12 @@ a:active {
         }
         &__about {
             width: initial;
+            &-title {
+                text-align: center;
+            }
+            &-description {
+                text-align: center;
+            }
             &-item {
                 height: initial;
                 padding-bottom: 70px;
@@ -1283,7 +1290,7 @@ a:active {
     }
     .commerce {
         &__items {
-            padding: 0 0 94px 15px;
+            padding: 0 15px 94px 15px;
             flex-direction: column;
         }
         &__item {
@@ -1291,8 +1298,12 @@ a:active {
             width: initial;
             padding: initial;
             display: flex;
-            justify-content: space-around;
-            align-items: flex-end;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-text {
+                max-width: 100%;
+            }
             &-img {
                 max-height: 50px;
                 margin: 0;
@@ -1300,29 +1311,47 @@ a:active {
         }
     }
     .power {
+        padding: 94px 10px 115px;
         &__img {
-            max-width: 500px;
+            max-width: 90%;
         }
     }
     .benefits {
+        padding: 94px 15px 150px;
+        &__title {
+            margin-bottom: 40px;
+        }
         &__items {
             justify-content: space-around;
         }
         &__item {
             width: initial;
-            padding-bottom: 40px;
+            padding: 0 10px 40px;
         }
     }
+    .specialize {
+        padding: 94px 15px 100px;
+    }
     .grid {
-        grid-template-columns: 348px;
+        grid-template-rows: repeat(6, 199px);
+        grid-template-columns: 1fr;
+        &__block {
+            &-description {
+                font-size: 15px;
+            }
+        }
+        &__block:nth-child(3) &__block-description {
+            margin-bottom: 33px;
+        }
     }
     .ecosystem {
         &__wrapper {
-            padding-left: 25px;
+            padding: 40px 20px 50px;
             flex-direction: column;
         }
         &__text {
             max-width: 100%;
+            padding: 60px 0 0;
             text-align: center;
             &-link {
                 display: inline-flex;
@@ -1431,5 +1460,28 @@ a:active {
                 left: 20px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .intro {
+        &__wrapper {
+            padding: 200px 30px 140px;
+        }
+        &__title {
+            font-size: 45px;
+        }
+        &__subtitle {
+            font-size: 45px;
+        }
+        &__description {
+            font-size: 15px;
+        }
+    }
+    .benefits__item-text {
+        max-width: 100%;
+    }
+    .demo {
+        padding: 93px 15px 107px;
     }
 }
