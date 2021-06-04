@@ -34,6 +34,7 @@ a:active {
     opacity: 0.6;
 }
 
+
 /* ---header--- */
 
 .header {
@@ -93,6 +94,7 @@ a:active {
     line-height: 100%;
     color: $black-light;
 }
+
 
 /*---intro---*/
 
@@ -165,6 +167,7 @@ a:active {
     }
 }
 
+
 /*---customers---*/
 
 .customers {
@@ -197,6 +200,7 @@ a:active {
         color: $black-light;
     }
 }
+
 
 /*---ability---*/
 
@@ -289,6 +293,7 @@ a:active {
     }
 }
 
+
 /*---commerce---*/
 
 .commerce {
@@ -338,6 +343,7 @@ a:active {
     }
 }
 
+
 /*---power---*/
 
 .power {
@@ -385,6 +391,7 @@ a:active {
     }
 }
 
+
 /*---benefits---*/
 
 .benefits {
@@ -431,6 +438,7 @@ a:active {
         }
     }
 }
+
 
 /*---brands---*/
 
@@ -483,6 +491,7 @@ a:active {
     font-weight: 600;
     border-radius: 3px;
 }
+
 .swiper-button-next {
     right: 16%;
     color: $purple;
@@ -495,6 +504,7 @@ a:active {
         position: relative;
     }
 }
+
 
 /*---specialize---*/
 
@@ -610,6 +620,7 @@ a:active {
     }
 }
 
+
 /*---ecosystem---*/
 
 .ecosystem {
@@ -636,7 +647,7 @@ a:active {
             font-size: 13px;
             line-height: 231%;
         }
-        &-description + &-description {
+        &-description+&-description {
             margin-bottom: 85px;
         }
         &-link {
@@ -659,6 +670,7 @@ a:active {
         max-height: 567px;
     }
 }
+
 
 /*---demo---*/
 
@@ -712,6 +724,7 @@ a:active {
     }
 }
 
+
 /*---adoption---*/
 
 .adoption {
@@ -747,6 +760,7 @@ a:active {
         }
     }
 }
+
 
 /*---footer---*/
 
@@ -1110,7 +1124,7 @@ a:active {
             &-title {
                 font-size: 32px;
             }
-            &-description + &-description {
+            &-description+&-description {
                 margin-bottom: 30px;
             }
         }
@@ -1147,6 +1161,7 @@ a:active {
     .header {
         &__wrapper {
             position: fixed;
+            z-index: 15;
             width: 100%;
         }
         &__buttons {
@@ -1216,7 +1231,6 @@ a:active {
                 right: 0%;
             }
         }
-
         &__item {
             margin-bottom: 18px;
         }
@@ -1288,28 +1302,6 @@ a:active {
             }
         }
     }
-    .commerce {
-        &__items {
-            padding: 0 15px 94px 15px;
-            flex-direction: column;
-        }
-        &__item {
-            margin-bottom: 50px;
-            width: initial;
-            padding: initial;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            &-text {
-                max-width: 100%;
-            }
-            &-img {
-                max-height: 50px;
-                margin: 0;
-            }
-        }
-    }
     .power {
         padding: 94px 10px 115px;
         &__img {
@@ -1364,6 +1356,7 @@ a:active {
         }
     }
     .footer {
+        z-index: 5;
         &__text {
             flex-direction: column;
             h3 {
@@ -1371,16 +1364,20 @@ a:active {
             }
         }
         &__capabilities {
-            margin-right: initial;
+            margin-right: 0;
             margin-bottom: 30px;
             &-block {
                 flex-direction: column;
             }
             &-container {
                 max-width: initial;
+                margin-right: 0;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                &:last-child {
+                    margin-right: 0;
+                }
             }
             &-container:first-child {
                 margin-bottom: 11px;
@@ -1390,7 +1387,7 @@ a:active {
             }
         }
         &__products {
-            margin-right: initial;
+            margin-right: 0;
             width: initial;
             margin-bottom: 30px;
             &-block {
@@ -1398,6 +1395,7 @@ a:active {
             }
             &-container {
                 max-width: initial;
+                margin-right: 0;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -1407,7 +1405,7 @@ a:active {
             }
         }
         &__resources {
-            margin-right: initial;
+            margin-right: 0;
             margin-bottom: 30px;
             &-block {
                 flex-direction: column;
@@ -1418,13 +1416,12 @@ a:active {
                 flex-wrap: wrap;
                 justify-content: center;
             }
-
             &-text {
                 margin-right: 30px;
             }
         }
         &__company {
-            margin-right: initial;
+            margin-right: 0;
             margin-bottom: 30px;
             &-block {
                 flex-direction: column;
@@ -1440,7 +1437,7 @@ a:active {
             }
         }
         &__working {
-            margin-right: initial;
+            margin-right: 0;
             &-block {
                 flex-direction: column;
             }
@@ -1463,6 +1460,17 @@ a:active {
     }
 }
 
+@media screen and (max-width: 650px) {
+    .benefits {
+        &__items {
+            flex-direction: column;
+        }
+        &__item-text {
+            max-width: 100%;
+        }
+    }
+}
+
 @media screen and (max-width: 624px) {
     .intro {
         &__wrapper {
@@ -1478,10 +1486,108 @@ a:active {
             font-size: 15px;
         }
     }
-    .benefits__item-text {
-        max-width: 100%;
+    .commerce {
+        &__items {
+            padding: 0 15px 94px 15px;
+            flex-direction: column;
+        }
+        &__item {
+            margin-bottom: 50px;
+            width: initial;
+            padding: initial;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-text {
+                max-width: 100%;
+            }
+            &-img {
+                max-height: 50px;
+                margin: 0;
+            }
+        }
+    }
+    .power {
+        &__buttons {
+            display: flex;
+            justify-content: center;
+        }
+        &__button {
+            display: flex;
+            justify-content: center;
+            padding: 11px 15px;
+            align-items: center;
+            width: 189px;
+        }
     }
     .demo {
         padding: 93px 15px 107px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    // 
+    // 
+    // 
+    // 
+    // 
+    .brands {
+        display: none;
+    }
+    // 
+    // 
+    // 
+    // 
+    .intro {
+        &__bg {
+            background-size: 620px;
+        }
+        &__wrapper {
+            padding: 200px 15px 140px;
+        }
+        &__title,
+        &__subtitle {
+            font-size: 40px;
+        }
+        &__input {
+            width: 100%;
+        }
+    }
+    .ability__button-link {
+        margin-right: 10px;
+    }
+    .ecosystem {
+        &__image {
+            max-width: 100%;
+        }
+    }
+    .demo {
+        &__title {
+            font-size: 30px;
+        }
+        &__input {
+            width: 100%;
+        }
+        &__submit {
+            padding: 13px 15px 11px;
+        }
+    }
+    .footer {
+        &__capabilities-container {
+            justify-content: flex-start;
+        }
+        &__products-container {
+            justify-content: flex-start;
+        }
+        &__resources-container {
+            justify-content: flex-start;
+        }
+        &__company-container {
+            justify-content: flex-start;
+        }
+        &__working-container {
+            justify-content: flex-start;
+        }
     }
 }
