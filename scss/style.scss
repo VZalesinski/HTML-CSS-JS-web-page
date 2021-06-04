@@ -34,7 +34,6 @@ a:active {
     opacity: 0.6;
 }
 
-
 /* ---header--- */
 
 .header {
@@ -94,7 +93,6 @@ a:active {
     line-height: 100%;
     color: $black-light;
 }
-
 
 /*---intro---*/
 
@@ -167,7 +165,6 @@ a:active {
     }
 }
 
-
 /*---customers---*/
 
 .customers {
@@ -200,7 +197,6 @@ a:active {
         color: $black-light;
     }
 }
-
 
 /*---ability---*/
 
@@ -293,7 +289,6 @@ a:active {
     }
 }
 
-
 /*---commerce---*/
 
 .commerce {
@@ -343,7 +338,6 @@ a:active {
     }
 }
 
-
 /*---power---*/
 
 .power {
@@ -391,7 +385,6 @@ a:active {
     }
 }
 
-
 /*---benefits---*/
 
 .benefits {
@@ -438,7 +431,6 @@ a:active {
         }
     }
 }
-
 
 /*---brands---*/
 
@@ -505,7 +497,6 @@ a:active {
     }
 }
 
-
 /*---specialize---*/
 
 .specialize {
@@ -558,6 +549,7 @@ a:active {
         }
         &-description {
             max-width: 377px;
+            height: 44px;
             margin-bottom: 8px;
             font-size: 15px;
             line-height: 147%;
@@ -568,6 +560,12 @@ a:active {
             font-size: 15px;
             line-height: 100%;
             color: $white;
+        }
+        &:nth-child(3) &-link {
+            top: 29px;
+        }
+        &:nth-child(5) &-link {
+            top: 29px;
         }
     }
     &__block:nth-child(1) {
@@ -585,9 +583,6 @@ a:active {
         }
     }
     &__block:nth-child(3) {
-        .grid__block-description {
-            margin-bottom: 33px;
-        }
         .grid__block-link {
             width: 238px;
             padding-bottom: 9px;
@@ -602,9 +597,6 @@ a:active {
         }
     }
     &__block:nth-child(5) {
-        .grid__block-description {
-            margin-bottom: 33px;
-        }
         .grid__block-link {
             width: 327px;
             padding-bottom: 9px;
@@ -619,7 +611,6 @@ a:active {
         }
     }
 }
-
 
 /*---ecosystem---*/
 
@@ -647,7 +638,7 @@ a:active {
             font-size: 13px;
             line-height: 231%;
         }
-        &-description+&-description {
+        &-description + &-description {
             margin-bottom: 85px;
         }
         &-link {
@@ -670,7 +661,6 @@ a:active {
         max-height: 567px;
     }
 }
-
 
 /*---demo---*/
 
@@ -724,7 +714,6 @@ a:active {
     }
 }
 
-
 /*---adoption---*/
 
 .adoption {
@@ -760,7 +749,6 @@ a:active {
         }
     }
 }
-
 
 /*---footer---*/
 
@@ -1105,11 +1093,7 @@ a:active {
                 width: 316px;
             }
         }
-        &__block:nth-child(3) {
-            .grid__block-description {
-                margin-bottom: 8px;
-            }
-        }
+
         &__block:nth-child(5) {
             .grid__block-link {
                 width: 303px;
@@ -1124,7 +1108,7 @@ a:active {
             &-title {
                 font-size: 32px;
             }
-            &-description+&-description {
+            &-description + &-description {
                 margin-bottom: 30px;
             }
         }
@@ -1218,7 +1202,7 @@ a:active {
             position: fixed;
             top: 0;
             right: -100%;
-            width: 30%;
+            width: 40%;
             height: 100%;
             margin: 0;
             padding: 60px 30px 30px 30px;
@@ -1265,6 +1249,9 @@ a:active {
             max-height: initial;
         }
     }
+    .commerce__item {
+        padding: 0;
+    }
     .ability {
         &__wrapper {
             padding: 20px 0 94px;
@@ -1309,7 +1296,7 @@ a:active {
         }
     }
     .benefits {
-        padding: 94px 15px 150px;
+        padding: 50px 15px;
         &__title {
             margin-bottom: 40px;
         }
@@ -1322,7 +1309,7 @@ a:active {
         }
     }
     .specialize {
-        padding: 94px 15px 100px;
+        padding: 50px 15px;
     }
     .grid {
         grid-template-rows: repeat(6, 199px);
@@ -1332,13 +1319,10 @@ a:active {
                 font-size: 15px;
             }
         }
-        &__block:nth-child(3) &__block-description {
-            margin-bottom: 33px;
-        }
     }
     .ecosystem {
         &__wrapper {
-            padding: 40px 20px 50px;
+            padding: 50px 20px;
             flex-direction: column;
         }
         &__text {
@@ -1526,19 +1510,22 @@ a:active {
     }
 }
 
-@media screen and (max-width:500px) {
-    // 
-    // 
-    // 
-    // 
-    // 
+@media screen and (max-width: 500px) {
+    //
+    //
+    //
+    //
+    //
     .brands {
         display: none;
     }
-    // 
-    // 
-    // 
-    // 
+    //
+    //
+    //
+    //
+    .nav__list {
+        width: 60%;
+    }
     .intro {
         &__bg {
             background-size: 620px;
@@ -1548,16 +1535,76 @@ a:active {
         }
         &__title,
         &__subtitle {
-            font-size: 40px;
+            font-size: 36px;
         }
         &__input {
             width: 100%;
         }
     }
-    .ability__button-link {
-        margin-right: 10px;
+    .ability {
+        &__title {
+            font-size: 35px;
+        }
+        &__button-link {
+            margin-right: 8px;
+        }
+    }
+    .commerce {
+        &__title {
+            font-size: 35px;
+        }
+    }
+    .power {
+        &__title {
+            font-size: 35px;
+        }
+    }
+    .benefits {
+        &__title {
+            font-size: 35px;
+        }
+    }
+    .specialize {
+        &__title {
+            font-size: 35px;
+        }
+    }
+    .grid {
+        &__block {
+            padding: 30px 10px;
+            &-description {
+                font-size: 14px;
+            }
+            &-link {
+                font-size: 12px;
+            }
+            &:nth-child(1) &-link {
+                width: initial;
+            }
+            &:nth-child(2) &-link {
+                width: initial;
+            }
+            &:nth-child(3) &-link {
+                width: initial;
+            }
+            &:nth-child(4) &-link {
+                width: initial;
+            }
+            &:nth-child(5) &-link {
+                width: initial;
+            }
+            &:nth-child(6) &-link {
+                width: initial;
+            }
+        }
     }
     .ecosystem {
+        &__text {
+            padding: 0;
+        }
+        &__title {
+            font-size: 35px;
+        }
         &__image {
             max-width: 100%;
         }
