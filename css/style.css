@@ -1419,6 +1419,9 @@ a:active {
     width: 60%;
   }
 
+  .intro {
+    height: 100vh;
+  }
   .intro__bg {
     background-size: 620px;
   }
