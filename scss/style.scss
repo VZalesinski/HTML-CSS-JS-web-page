@@ -1534,7 +1534,7 @@
     
     @media screen and (max-width:550px) {
         .intro {
-            height: 100vh;
+            height: 90vh;
         }
     }
     
@@ -1671,5 +1671,11 @@
             &__working-container {
                 justify-content: flex-start;
             }
+        }
+    }
+    
+    @media screen and (max-width:340px) {
+        .intro {
+            height: 100vh;
         }
     }

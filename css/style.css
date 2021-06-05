@@ -1416,7 +1416,7 @@ a:active {
 }
 @media screen and (max-width: 550px) {
   .intro {
-    height: 100vh;
+    height: 90vh;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1541,5 +1541,10 @@ a:active {
   }
   .footer__working-container {
     justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 340px) {
+  .intro {
+    height: 100vh;
   }
 }
