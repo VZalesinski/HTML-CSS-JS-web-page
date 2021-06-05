@@ -1399,13 +1399,19 @@ a:active {
     width: 189px;
   }
 
+  .swiper-container {
+    width: 250px;
+  }
+  .swiper__item {
+    max-width: 250px;
+    min-height: 370px;
+  }
+  .swiper__item-img {
+    max-width: 250px;
+  }
+
   .demo {
     padding: 93px 15px 107px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .swiper__item-img {
-    max-width: 320px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1446,9 +1452,10 @@ a:active {
   }
 
   .brands {
-    padding: 50px 15px 70px;
+    padding: 50px 0 70px;
   }
   .brands__title {
+    padding: 0 15px;
     font-size: 35px;
   }
 
@@ -1460,7 +1467,7 @@ a:active {
     min-height: 370px;
   }
   .swiper__item-img {
-    width: 250px;
+    max-width: 250px;
   }
 
   .specialize__title {

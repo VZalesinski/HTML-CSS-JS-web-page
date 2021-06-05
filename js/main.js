@@ -9,11 +9,11 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         type: 'bullets',
     },
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: false,
-    },
+    // autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction: false,
+    //     pauseOnMouseEnter: false,
+    // },
     speed: 800,
     loop: true,
     slidesPerView: 3,
@@ -29,7 +29,7 @@ const swiper = new Swiper('.swiper-container', {
     breakpoints: {
         0: {
             slidesPerView: 1,
-            spaceBetween: 50,
+            spaceBetween: 70,
         },
         624: {
             slidesPerView: 2,
