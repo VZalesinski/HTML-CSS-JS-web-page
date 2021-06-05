@@ -1532,12 +1532,6 @@
         }
     }
     
-    @media screen and (max-width:550px) {
-        .intro {
-            height: 90vh;
-        }
-    }
-    
     @media screen and (max-width: 500px) {
         .nav__list {
             width: 60%;
@@ -1671,11 +1665,5 @@
             &__working-container {
                 justify-content: flex-start;
             }
-        }
-    }
-    
-    @media screen and (max-width:340px) {
-        .intro {
-            height: 100vh;
         }
     }

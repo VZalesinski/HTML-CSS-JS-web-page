@@ -1414,11 +1414,6 @@ a:active {
     padding: 93px 15px 107px;
   }
 }
-@media screen and (max-width: 550px) {
-  .intro {
-    height: 90vh;
-  }
-}
 @media screen and (max-width: 500px) {
   .nav__list {
     width: 60%;
@@ -1541,10 +1536,5 @@ a:active {
   }
   .footer__working-container {
     justify-content: flex-start;
-  }
-}
-@media screen and (max-width: 340px) {
-  .intro {
-    height: 100vh;
   }
 }
