@@ -9,11 +9,11 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
         type: 'bullets',
     },
-    // autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false,
-    //     pauseOnMouseEnter: false,
-    // },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false,
+    },
     speed: 800,
     loop: true,
     slidesPerView: 3,
