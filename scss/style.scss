@@ -1532,12 +1532,17 @@
         }
     }
     
+    @media screen and (max-width:550px) {
+        .intro {
+            height: 100vh;
+        }
+    }
+    
     @media screen and (max-width: 500px) {
         .nav__list {
             width: 60%;
         }
         .intro {
-            height: 100vh;
             &__bg {
                 background-size: 620px;
             }
