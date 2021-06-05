@@ -1,35 +1,61 @@
 // slider swiper
 
 const swiper = new Swiper('.swiper-container', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  slidesPerView: 3,
-  spaceBetween: 40,
-  loop: true,
-  loopedSlides: 3,
-  breakpoints: {
-    992: {
-      slidesPerView: 3,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-    768: {
-      slidesPerView: 2,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
     },
-    480: {
-      slidesPerView: 1,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false,
     },
-  }
+    speed: 800,
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 40,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+        },
+        624: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        769: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        1201: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+
+        },
+    },
+
 });
 
 // burger-menu
 
 const menuBurger = document.querySelector('.header__burger');
 if (menuBurger) {
-  const navList = document.querySelector('.nav__list');
-  menuBurger.addEventListener("click", function() {
-    document.body.classList.toggle('_lock');
-    menuBurger.classList.toggle('_active');
-    navList.classList.toggle('_active');
-  })
+    const navList = document.querySelector('.nav__list');
+    menuBurger.addEventListener("click", function() {
+        document.body.classList.toggle('_lock');
+        menuBurger.classList.toggle('_active');
+        navList.classList.toggle('_active');
+    })
 }
