@@ -1,6 +1,6 @@
 # Project "[QUIBIT](https://vzalesinski.github.io/QUIBIT/index.html)"
 ***
-##Using:
+## Using:
 >___HTML___
 >>>___Responsive___
 >
