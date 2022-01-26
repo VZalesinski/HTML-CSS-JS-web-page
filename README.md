@@ -3,6 +3,7 @@
 ## Using:
 >___HTML___
 >>>___Responsive___
+>>>___Semantic___
 >
 >___Css___
 >>___SACC, BEM, Flex, Grid, Responsive___
